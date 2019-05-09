@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>赏文游软件官网</title>
+    <style type="text/css">
+        #waibu {
+            padding:0px;
+            margin:0px;
+            width:100%;
+        }
+        #dingbu {
+            margin:0px auto;
+            width:1200px;
+            height:120px;
+            position:relative;
+        }
+        #logo{
+            background-image:url(images/logo.jpg);
+            background-repeat:no-repeat;
+            width:350px;
+            height:50px;
+            float:left;
+            margin-left:25px;
+        }
+        #dingbu h5 {
+            background-image:url(images/tel.jpg);
+            background-repeat:no-repeat;
+            width:150px;
+            height:30px;
+            float:left;
+            margin-left:500px;
+            margin-top:10px;
+            position:relative;
+            
+
+        }
+        #dingbu h5 span {
+            position:absolute;
+            top:5px;
+            left:30px;
+        }
+        #spx {
+            margin:0px auto;
+            width:1200px;
+            height:5px;
+            background-color:#b6ff00;
+            position:absolute;
+            top:52px;
+            left:0px;
+        }
+        #daohang {
+            margin-left:0px;
+            width:1200px;
+            height:130px;
+            position:absolute;
+            top:55px;
+            
+        }
+        #daohang ul li {
+            list-style-type:none;
+            float:left;
+            /*width:150px;
+            height:30px;*/
+            margin:5px 10px 0px 20px;     
+        }
+        #daohang ul li a{
+            text-decoration:none;
+            font-family:微软雅黑;
+            color:gray;
+            font-size:18px;
+            font-weight:bold;                         
+        }
+            #daohang ul li .nav1 {
+                float:right;
+            }
+        .nav1 {
+            background-image:url(images/nav1.jpg);
+            background-repeat:no-repeat;
+            height:30px; 
+            width:150px;   
+            position:relative;
+            left:360px;
+                   
+        }
+        .nav1 span {
+            font-weight:bold;
+            position:absolute;
+            left:35px;
+            top:5px;
+        }
+        .nav2 {
+            background-image:url(images/nav2.jpg);
+            background-repeat:no-repeat;
+            height:30px;
+            width:150px;
+            position:relative;
+            left:330px;
+            
+        }
+        .nav2 span {
+            font-weight:bold;
+            position:absolute;
+            left:33px;
+            top:5px;
+        }
+        #shangbu {
+            width:1200px;
+            height:422px;
+            margin:0px auto; 
+            background-image:url(images/main2.jpg);
+            background-repeat:no-repeat;
+            position:relative;
+        }
+        #xuan {
+          width:300px;
+          height:350px;
+          background-color:white;
+          position:absolute;
+          left:120px;
+          top:30px;
+          border:1px solid #d0cdcd;
+          padding-left:10px;
+        }
+        #xuan dl dt {
+            font-family:微软雅黑;
+            font-weight:bold;
+            color:#b6ff00;
+            font-size:12px;
+        }
+        #xuan dl dd {
+            font-family:微软雅黑;
+            font-size:10px;          
+        }
+        .route {
+            width:100px;
+            height:30px;
+            background-image:url(images/route.jpg);
+            background-repeat:no-repeat;
+            position:relative;
+            margin-left:12px;
+        }
+        .route span {
+            position:absolute;
+            left:25px;
+            top:8px;
+
+        }
+        .experience {
+            width:100px;
+            height:30px;
+            background-image:url(images/experience.jpg);
+            background-repeat:no-repeat;
+            position:relative;
+            margin-left:12px;
+        }
+        .experience span{
+            position:absolute;
+            left:25px;
+            top:8px;
+        }
+        .brand {
+            width:100px;
+            height:30px;
+            background-image:url(images/brand.jpg);
+            background-repeat:no-repeat;
+            position:relative;
+            margin-left:12px;
+        }
+        .brand span{
+            position:absolute;
+            left:25px;
+            top:8px;
+        }
+        .wenzi {
+            font-family:黑体;
+            color:#b6ff00;
+            font-size:25px;
+            width:800px;
+            margin:0px auto;
+            margin-bottom:10px;
+            margin-top:10px;
+        }
+        #zhongbu {
+            width:1200px;
+            height:1280px;
+            background-color:#f3f3f3;
+            margin:0px auto;
+            
+        }
+        #zhongshangbu {
+            width:1200px;
+            height:601px;
+            margin:0px auto;
+            /*padding:10px 10px 10px 10px;*/ 
+            position:relative;
+            padding-top:20px;
+            top: 0px;
+            left: 0px;
+        }
+        #zhongshangbu ul li {
+            list-style-type:none;
+        }
+       #good1 {
+            background-image:url(images/good1.jpg);
+            background-repeat:no-repeat;
+            height:32px;
+            width:1160px;
+            margin-left:20px;
+        }
+        .goodline1 {
+            background-image:url(images/goodline1.png);
+            background-repeat:no-repeat;
+            height:310px;
+            width:310px; 
+            position:absolute;
+            left:20px;
+            top:68px; 
+        }
+        .goodline2 {
+            background-image:url(images/goodline2.png);
+            background-repeat:no-repeat;
+            height:310px;
+            width:450px;
+            position:absolute;
+            left:335px;
+            top:68px;
+
+       }
+        .goodline3 {
+            background-image:url(images/goodline3.png);
+            background-repeat:no-repeat;
+            height:560px;
+            width:385px;
+            position:absolute;
+            left:795px;
+            top:68px;
+       }
+       .goodline4 {
+            background-image:url(images/goodline4.png);
+            background-repeat:no-repeat;
+            height:240px;
+            width:410px;
+            position:absolute;
+            left:20px;
+            top:388px; 
+       }
+       .goodline5 { 
+            background-image:url(images/goodline5.png);
+            background-repeat:no-repeat;
+            height:240px;
+            width:350px;
+            position:absolute;
+            left:435px;
+            top:388px; 
+       }
+        #zhongzhongbu {
+            width:1200px;
+            height:288px;
+            padding-top:20px;
+            position:relative;
+            top: 0px;
+            left: 0px;
+        }
+        #good2 {
+            background-image: url(images/good2.jpg);
+            background-repeat: no-repeat;
+            height: 32px;
+            width: 1160px;
+            margin-left:20px;
+            
+        }
+        #zhongzhongbu ul li {
+            list-style-type:none;
+            float:left;
+           
+            
+        }
+        .goodexp1 {
+            background-image:url(images/goodexp1.png);
+            background-repeat:no-repeat;
+            width:282px;
+            height:250px; 
+            margin-left:-20px;
+           
+                
+        }
+        .goodexp2 {
+            background-image:url(images/goodexp2.png);
+            background-repeat:no-repeat;
+            width:282px;
+            height:250px; 
+            margin-left:8px;
+              
+        }
+        .goodexp3 {
+            background-image:url(images/goodexp3.png);
+            background-repeat:no-repeat;
+            width:282px;
+            height:250px;
+            margin-left:8px;     
+        }
+        .goodexp4 {
+            background-image:url(images/goodexp4.png);
+            background-repeat:no-repeat;
+            width:282px;
+            height:250px;
+            margin-left:8px;     
+        }
+        .span1 {
+            font-size:18px;
+            font-family:黑体;
+            font-weight:bold;
+            color:#808080;
+            margin-left:25px;
+            position:absolute;
+            top:260px;
+        }
+        .span2 {
+            font-size:13px;
+            font-family:黑体;
+            /*margin-left:25px;*/
+            position:absolute;
+            margin-left:5px;
+            top:280px;
+        }
+        #zhongxaibu {
+            width:1200px;
+            height:250px;
+            /*border:1px solid black;*/
+        }
+        .person1 {
+            background-image:url(images/person1.png);
+            background-repeat:no-repeat;
+            width:166px;
+            height:166px;
+            float:left;
+            margin-top:70px;
+            margin-left:80px;
+            position:relative;
+        }
+        .person2 {
+            background-image:url(images/person2.png);
+            background-repeat:no-repeat;
+            width:166px;
+            height:166px;
+            float:left;
+            margin-left:80px;
+            margin-top:70px;
+            position:relative;
+        }
+        .person3 {
+            background-image:url(images/person3.png);
+            background-repeat:no-repeat;
+            width:166px;
+            height:166px;
+            float:left;
+            margin-left:80px;
+            margin-top:70px;
+            position:relative;
+        }
+        .person4 {
+            background-image:url(images/person4.png);
+            background-repeat:no-repeat;
+            width:166px;
+            height:166px;
+            float:left;
+            margin-left:80px;
+            margin-top:70px;
+            position:relative;
+        }
+        #good3 {
+            background-image:url(images/good3.jpg);
+            background-repeat:no-repeat;
+            height:32px;
+            width:1160px;
+            margin-left:20px;
+        }
+        #good3 ul li {
+           list-style-type:none;
+        }
+        .a { 
+            font-family:黑体;
+            font-weight:bold;
+            font-size:25px;
+            color:gray;
+            position:absolute;
+            top:180px;
+            left:50px;                     
+        }
+      .a1 {
+         font-family:黑体;
+         font-size:15px;
+         font-weight:bold;
+         position:absolute;
+         top:215px;
+         left:2px;
+         width: 190px;
+        }
+       .b { 
+            font-family:黑体;
+            font-weight:bold;
+            font-size:25px;
+            color:gray;
+            position:absolute;
+            top:180px;
+            left:50px;                     
+        }
+      .b2 {
+         font-family:黑体;
+         font-size:15px;
+         font-weight:bold;
+         position:absolute;
+         top:215px;
+         left:2px;
+         width: 190px;
+        }
+       .c { 
+            font-family:黑体;
+            font-weight:bold;
+            font-size:25px;
+            color:gray;
+            position:absolute;
+            top:180px;
+            left:55px;                     
+        }
+      .c3 {
+         font-family:黑体;
+         font-size:15px;
+         font-weight:bold;
+         position:absolute;
+         top:215px;
+         left:2px;
+         width:190px;
+        }
+       .d { 
+            font-family:黑体;
+            font-weight:bold;
+            font-size:25px;
+            color:gray;
+            position:absolute;
+            top:180px;
+            left:50px;                     
+        }
+      .d4 {
+         font-family:黑体;
+         font-size:15px;
+         font-weight:bold;
+         position:absolute;
+         top:215px;
+         left:2px;
+         width:200px;
+        }
+        #dibu {
+            width:1200px;
+            height:100px;
+            background-color:#058a10;
+            margin:0px auto;
+            padding-top:10px;
+        }
+        #dibu span {
+            font-family:黑体;
+            font-size:20px;
+            /*font-weight:bold;*/
+            color:white;
+            width:800px;
+            margin-left:430px;           
+        }
+        #dibuwenzi {
+            width:600px;
+            margin:0px auto;
+            margin-top:30px;
+        }
+        #dibuwenzi ul li {
+            list-style-type:none;
+            font-family:黑体;
+            font-size:20px;
+            float:left;
+            color:white;
+            margin-left:30px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="waibu">
+        <div id="dingbu">
+           <div id="logo"><a href="#"></a></div>
+             <h5><span>4102-133-787</span></h5>
+             <div id="spx"></div>
+             <div id="daohang">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">文化体验</a></li>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">主要线路</a></li>
+                    <li class="nav1"><a href="#"><span>关于赏文网</span></a></li>
+                    <li class="nav2"><a href="#"><span>我的订单</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="shangbu">
+        <div id="xuan">
+            <dl>
+                <dt class="route"><span>热门路线</span></dt>
+                <dd>绍兴•寻黄酒高端主题旅行计划</dd><br />
+                <dd>上海 苏州 杭州 南京 无锡</dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt class="experience"><span>热门体验</span></dt>
+                <dd>无锡惠山泥人DIY体验 上海玻璃博物</dd><br />
+                <dd>馆体验 苏州太湖房产文化体验</dd>
+            </dl>
+            <hr />
+            <dl>
+                <dt class="brand"><span>品牌&活动</span></dt>
+                <dd>游文化•品牌故事 游文化•旅行体验</dd><br />
+                <dd>师第一季召令</dd>
+            </dl>
+        </div>         
+        </div> 
+        <p class="wenzi">在路上，我们的行程<b><i>15000公里</i></b>，将<b><i>68</i></b>个文化体验项目，<b><i>26</i></b>条线路送给你</p>
+     <div id="zhongbu">
+         <div id="zhongshangbu">
+             <div id="good1"></div>
+             <ul>
+                 <li class="goodline1"></li>
+                 <li class="goodline2"></li>
+                 <li class="goodline3"></li>
+                 <li class="goodline4"></li>
+                 <li class="goodline5"></li>
+             </ul>
+         </div>
+         <div id="zhongzhongbu">
+            <div id="good2"></div>
+             <ul>
+                 <li class="goodexp1"><span class="span1">苏州·镇湖刺绣文化参观体验</span><span class="span2">观园林赏苏绣，针尖上的的镇湖带你了解中国刺绣</span></li>
+                 <li class="goodexp2"><span class="span1">&nbsp;&nbsp;上海·宝山陶瓷DIY体验</span><span class="span2">&nbsp;&nbsp;&nbsp;&nbsp;体验手工制陶乐趣，感受陶瓷艺术魅力</span></li>
+                 <li class="goodexp3"><span class="span1">&nbsp;&nbsp;苏州·太湖房车文化体验</span><span class="span2">&nbsp;&nbsp;&nbsp;&nbsp;开启房车体验之旅，随心畅想太湖风光</span></li>
+                 <li class="goodexp4"><span class="span1">&nbsp;&nbsp;无锡·惠山泥人DIY体验</span><span class="span2">&nbsp;&nbsp;&nbsp;&nbsp;穿越千年的技艺，寻找“大阿福”的传说</span></li>
+             </ul>
+            
+         </div>
+         <div id="zhongxaibu">
+                 <div id="good3">
+                 <ul>
+                     <li class="person1"><span class="a">王阿牛</span><span class="a1">绍兴黄酒酿制技艺传承人</span></li>
+                     <li class="person2"><span class="b">喻湘莲</span><span class="b2">无锡惠山手捏泥人传承人</span></li>
+                     <li class="person3"><span class="c">吴澄</span><span class="c3">常州乱针刺绣第四代传承人</span></li>
+                     <li class="person4"><span class="d">汪寅仙</span><span class="d4">宜兴紫砂壶陶制作技艺传承人</span></li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+        <div id="dibu">
+            <span>&copy;1999-2014&nbsp;www.swh.com版权所有盗版必究</span>
+            <div id="dibuwenzi">
+                <ul>
+                    <li>关于我们</li>
+                    <li>用户协议</li>
+                    <li>加入我们</li>
+                    <li>网站地图</li>
+                    <li>联系我们</li>
+                </ul>
+            </div>
+        </div>
+   </div>
+
+</body>
+</html>
